@@ -8,7 +8,7 @@ import { FontSizeEditorComponent } from './font-size-editor/font-size-editor.com
 @NgModule({
   declarations: [
     AppComponent,
-    FontSizeEditorComponent
+    FontSizeEditorComponent,
   ],
   imports: [
     BrowserModule,
