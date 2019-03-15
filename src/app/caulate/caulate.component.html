@@ -1,0 +1,26 @@
+
+<h2>Caculator</h2>
+
+<label>
+  number:
+  <input type="number" [value]="first" (change)="onFirstChange($event.target.value)">
+</label>
+
+<label>
+  <select [value]="operator" (change)="onSelectChange($event.target.value)">
+    <option value="-">+</option>
+    <option value="+">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+  </select>
+</label>
+
+<label>
+  number 2:
+  <input type="text" [value]="second" (change)="onSecondChange($event.target.value)">
+</label>
+
+<label>
+  <input type="submit" (click)="calculate()">
+</label>
+<div>{{output}}</div>
